@@ -126,6 +126,68 @@
   .red {
     color: rgba(246, 19, 19, 0.872);
   }
+
+  .detailsContainer div, .priceContainer div{
+    background-color: #ECECEA;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .prices {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  .prices li{
+    color: rgb(82, 78, 78);
+    margin-left: 6px;
+  }
+
+  .prices li:first-of-type{
+    border-left: 4px solid green;
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+  .prices li:nth-child(2n){
+    border-left: 4px solid yellow;
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+  .prices li:last-of-type{
+    border-left: 4px solid rgb(240, 77, 23);
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+
+  .marketPrice {
+    width: 5px;
+  }
+
+  .normalLogo{
+    background-color: gray;
+    font-weight: 900;
+    color: black;
+    padding: 0 3px;
+  }
+  
+  .topMarket{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .detailsContainer div:first-of-type{
+    background-color: #F4F4F2;
+  }
   
   .imgPreview {
     width: 250px;
