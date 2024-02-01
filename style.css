@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(238, 232, 237);
+    background-color: rgb(245, 240, 244);
   }
   
   .descriptionContainer {
@@ -145,6 +145,52 @@
   
   .navMenu:active {
     height: 34px;
-    background-color: rgb(167, 46, 163);
+    background-color: rgb(84, 83, 83);
   }
   
+  .shopListContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 225, 225);
+    box-shadow: 5px 5px 5px rgb(208, 208, 208);
+    padding: 5px 0;
+    width: 98%;
+  }
+
+  .itemShopList {
+    color: gray;
+    border: 2px solid gray;
+    padding: 0 5px;
+  }
+
+  .shopList {
+    color: rgb(67, 66, 66);
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .totalCards {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 1px;
+  }
+
+  .shopListToogle {
+    font-size: 20px;
+    width: 35px;
+    padding: 2px;
+  }
+
+  .shopListButton{
+    background-color: rgb(36, 179, 36);
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    height: 50px;
+    width: 250px;
+    align-self: center;
+    border: none;
+  }
