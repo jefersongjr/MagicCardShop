@@ -4,14 +4,16 @@ const cardName = document.querySelector('.cardName');
 const imgList = document.querySelector('.imgList');
 const imgPreview = document.querySelector('.imgPreview');
 const englishName = document.querySelector('.englishName');
-const heartButton =  document.querySelector(".heartButton")
+const heartButton = document.querySelector(".heartButton");
+const colorDetails = document.querySelector(".colorDetails");
+const manaDetails = document.querySelector(".manaDetails");
 let liked = false;
 
 const cardSet = [
- {imageUrl: "img/card2.jpg", englishName: "Counterspell", name: "Contramágica_2", mana: 2, color: "blue"},
- {imageUrl: "img/card4.jpg",englishName: "Coordinated Assault", name: "Assalto Coordenado", mana:1, color: "red"},
- {imageUrl: "img/card1.jpg", englishName: "Counterspell", name: "Contramágica_1", color: "blue"},
- {imageUrl: "img/card3.jpg", englishName: "Counterspell", name: "Contramágica_3", color: "blue"},
+ {imageUrl: "img/card2.jpg", englishName: "Counterspell", name: "Contramágica_2", mana: 2, color: "azul", manaImage: "img/blueMana.jpg"},
+ {imageUrl: "img/card4.jpg",englishName: "Coordinated Assault", name: "Assalto Coordenado", mana:1, color: "vermelho",manaImage: "img/redMana.jpg"},
+ {imageUrl: "img/card1.jpg", englishName: "Counterspell", mana: 2, name: "Contramágica_1", color: "azul"},
+ {imageUrl: "img/card3.jpg", englishName: "Counterspell", mana: 2, name: "Contramágica_3", color: "azul"},
 ];
 
 navButton.addEventListener('click', () => {
@@ -63,7 +65,7 @@ const clickImage = (event) => {
     const editedTittle = cardObject.name.replace(/_[0-9]+$/, '');
     cardName.innerHTML = editedTittle;
     imgPreview.src = cardObject.imageUrl;
-    console.log(favotiteCards);
+    console.log(ca);
     englishName.innerHTML = cardObject.englishName;
 }
 
