@@ -2,62 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CardMagic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CardMagic</title>
 </head>
 
 <body>
-    <main id="mainContent">
-        <section class="descriptionContainer">
-            <header id="header">
-                <button class="navMenu">...</button>
-                <nav class="navigation">
-                    <ul class="navList">
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>Magic: The Gathering</li>
-                        </a>
-                        <a href="#">
-                            <li>Busca</li>
-                        </a>
-                        <a href="#">
-                            <li>Bazar</li>
-                        </a>
-                        <a href="#">
-                            <li>Lista de Desejos</li>
-                        </a>
-                    </ul>
-                </nav>
-            </header>
-            <div class="set">
-                <div class="textSet">
-                  <span class="cardLogo">C</span>
-                  <span class="cardNumber">#045</span>
-                  <span>Dominaria Remastared</span>
+  <main id="mainContent">
+    <section class="descriptionContainer">
+      <header id="header">
+        <button class="navMenu">...</button>
+        <nav class="navigation">
+          <ul class="navList">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>Magic: The Gathering</li>
+            </a>
+            <a href="#">
+              <li>Busca</li>
+            </a>
+            <a href="#">
+              <li>Bazar</li>
+            </a>
+            <a href="#">
+              <li>Lista de Desejos</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <div class="set">
+        <div class="textSet">
+          <span class="cardLogo">C</span>
+          <span class="cardNumber">#045</span>
+          <span>Dominaria Remastared</span>
+        </div>
+        <select class="setType">
+          <option value="dmr"">DMR</option>
+                </select>
+              </div>
+              <div>
+                <div>
+                <h1 class=" cardName">
+                </h1>
+                <span class="englishName"></span>
                 </div>
-                <select class="setType">
-                    <option value="dmr"">DMR</option>
-                          </select>
-                        </div>
-                        <div>
-                          <div>
-                          <h1 class=" cardName">
-                          </h1>
-                          <span class="englishName"></span>
-                          </div>
-                          <div>
-                            <button class="heartButton" onclick="toggleHeart()">♡</button>
-                            <button class="navMenu">...</button>
-                          </div>
+                <div>
+                  <button class="heartButton" onclick="toggleHeart()">♡</button>
+                  <button class="navMenu">...</button>
                 </div>
-        </section>
-        <aside class="cardPreviewContainer">
-        </aside>
-    </main>
+      </div>
+    </section>
+    <aside class="cardPreviewContainer">
+      <img src="img/card2.jpg" class="imgPreview" />
+      <hr class="divisor">
+      <ul class="imgList">
+      </ul>
+    </aside>
+  </main>
 </body>
 <script src="script.js"></script>
 
