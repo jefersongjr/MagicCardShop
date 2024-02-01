@@ -8,8 +8,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     background-color: #F4F4F2;
   }
 
@@ -44,9 +43,9 @@
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
+    margin: 0 auto 12px;
     text-align: center;
-    width: 30%;
+    width: 80%;
   }
   
   .navList li {
@@ -54,6 +53,11 @@
     border: 1px solid gray;
     list-style-type: none;
     padding: 10px;
+  }
+
+  .navList li:active {
+    background-color: gray;
+    color: #ccc;
   }
   
   .navList a {
@@ -70,7 +74,7 @@
     box-shadow: 5px 5px 5px rgb(208, 208, 208);
   }
 
-.set {
+  .set {
     display: flex;
     align-items: center;
     border: 2px solid rgb(208, 208, 208);
@@ -126,15 +130,6 @@
   .red {
     color: rgba(246, 19, 19, 0.872);
   }
-
-  .detailsContainer div, .priceContainer div{
-    background-color: #ECECEA;
-    height: 30px;
-    text-align: center;
-    color: gray;
-    align-items: center;
-    margin-bottom: 10px;
-  }
   
   .prices {
     display: flex;
@@ -166,7 +161,6 @@
     padding-left: 6px;
   }
 
-
   .marketPrice {
     width: 5px;
   }
@@ -183,6 +177,7 @@
     justify-content: space-between;
     flex-direction: row;
     margin-bottom: 10px;
+    background-color: #F4F4F2;
   }
 
   .detailsContainer div:first-of-type{
@@ -244,17 +239,25 @@
     padding: 0 5px;
   }
 
+  .detailsContainer{
+    background-color: #F4F4F2;
+  }
+
   .detailsContainer div {
     display: flex;
     margin-bottom: 10px;
     width: 100%;
     justify-content: space-between;
-    color: gray;
   }
 
   .detailText {
     color: black;
     font-weight: bold;
+  }
+
+  .shopListDescription{
+    font-size: 10px;
+    color: gray;
   }
   
   .detailTextAll {
@@ -285,7 +288,7 @@
     padding: 2px;
   }
 
-  .shopListButton{
+  .shopListButton {
     background-color: rgb(36, 179, 36);
     color: white;
     font-weight: bolder;
@@ -294,4 +297,134 @@
     width: 250px;
     align-self: center;
     border: none;
+    margin-bottom: 8px;
   }
+
+  .shopListButton:hover{
+    background-color: green;
+  }
+
+  .shopListButton:active{
+    background-color: rgb(47, 136, 47);
+  }
+   
+   
+  .shopListDescription {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #mainContent {
+      flex-direction: row-reverse;
+      height: min-content;
+      padding: none;
+      margin: none;
+    }
+  
+    .navList {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      width: 60%;
+    }
+
+    .set {
+      padding: 10px 15px;
+      width: 95%;
+    }
+
+    .nameContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 98%;
+    }
+
+    .imgList {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      width: calc(135px * 3);
+    }
+
+    br {
+        display: none;
+    }
+  
+    .navList li::after {
+      padding-left: 10px;
+      content: "|";
+    }
+  
+    .descriptionContainer {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly ;
+      padding: 20px 120px 0;
+      border-left: 1px solid rgb(151, 148, 148);
+    }
+  
+    .cardPreviewContainer {
+      padding: 40px;
+      width: 30%;
+    }
+  
+    .navList li {
+      border: none;
+    }
+  
+    .navMenu {
+      display: none;
+    }
+    
+    .heartContainer{
+      display: flex;
+      flex-direction: row;
+    }
+    .heartButton{
+        height: 50px;
+        width: 50px;
+        margin-right: 6px;
+        padding-bottom: 2px;
+        box-shadow: 5px 5px 5px rgb(208, 208, 208);
+        border: none;
+    }
+    .heartButton {
+        display: block;
+    }
+  
+    .imgPreview {
+      width: 350px;
+      height: 450px;
+    }
+
+    .shopListContainer {
+        text-align: left;
+        width: 98%;
+    }
+
+    .inputQuantity {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .inputQuantity div {
+        margin-right: 14px
+    }
+
+    .detailsContainer div {
+      margin-bottom: 10px;
+      height: 25px;
+      align-items: center;
+      background-color: #ECECEA;
+    }
+
+    .priceContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  

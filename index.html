@@ -2,108 +2,115 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>CardMagic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CardMagic</title>
 </head>
 
 <body>
-  <main id="mainContent">
-    <section class="descriptionContainer">
-      <header id="header">
-        <button class="navMenu">...</button>
-        <nav class="navigation">
-          <ul class="navList">
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>Magic: The Gathering</li>
-            </a>
-            <a href="#">
-              <li>Busca</li>
-            </a>
-            <a href="#">
-              <li>Bazar</li>
-            </a>
-            <a href="#">
-              <li>Lista de Desejos</li>
-            </a>
-          </ul>
-        </nav>
-      </header>
-      <div class="set">
-        <div class="textSet">
-          <span class="cardLogo">C</span>
-          <span class="cardNumber">#045</span>
-          <span>Dominaria Remastared</span>
-        </div>
-        <select class="setType">
-          <option value="dmr"">DMR</option>
+    <main id="mainContent">
+        <section class="descriptionContainer">
+            <header id="header">
+                <button class="navMenu">...</button>
+                <nav class="navigation">
+                    <ul class="navList">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Magic: The Gathering</li>
+                        </a>
+                        <a href="#">
+                            <li>Busca</li>
+                        </a>
+                        <a href="#">
+                            <li>Bazar</li>
+                        </a>
+                        <a href="#">
+                            <li>Lista de Desejos</li>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+            <div class="set">
+                <div class="textSet">
+                    <span class="cardLogo">C</span>
+                    <span class="cardNumber">#045</span>
+                    <span>Dominaria Remastared</span>
+                </div>
+                <select class="setType">
+                    <option value="dmr"">DMR</option>
                 </select>
               </div>
-              <div>
+              <div class="nameContainer">
                 <div>
-                <h1 class=" cardName">
-                </h1>
-                <span class="englishName"></span>
-                </div>
+                   <h1 class=" cardName">
+                   </h1>
+                   <span class="englishName"></span>
+              </div>
+               <div class="heartContainer">
+                <button class="heartButton" onclick="toggleHeart()">♡</button>
+                <button class="navMenu heartButton">...</button>
+              </div>
+            </div>
+            <div class="shopListContainer">
+                <h3 class="shopList">Lista de Compra <span class="itemShopList">?</span></h3>
+                <div class="shopListDescription">
+                    <span>Add a carta aqui e deixe que a Liga <br> calcule o melhor preço para você!</span>
+                 </div>
+                <div class="inputQuantity">
                 <div>
-                  <button class="heartButton" onclick="toggleHeart()">♡</button>
-                  <button class="navMenu">...</button>
+                    <input type="number" min="1" class="totalCards" />
+                    <button class="shopListToogle">☰</button>
                 </div>
-      </div>
-      <div class="shopListContainer">
-        <h3 class="shopList">Lista de Compra <span class="itemShopList">?</span></h3>
-        <div>
-            <input type="number" min="1" class="totalCards"/>
-            <button class="shopListToogle">☰</button>
-        </div>
-        <button class="shopListButton"><span>+</span>ADICIONAR NA LISTA</button>
-      </div>
-      <div class="detailsContainer">
-        <div><span class="detailText">Detalhes da carta</span><button class="detailTextAll">Ver tudo</button></div>
-        <div><span>Cor</span> <span class="colorDetails blue"></span></div>
-        <div><span>Custo de mana</span><ul class="manaDetails"></ul></div>
-        <div><span>Tipo</span><span class="detailText cardType"></span></div>
-    </div>
-    <div>
-        <div class="topMarket">    
-          <div>
-            <p class="detailText">Preço Médio</p>
-            <p class="detailText">Marketplace</p>
-          </div>
-            <button class="detailTextAll">Ver tudo</button></div>
-        <div class="priceContainer">
-            <div>
-                <span class="normalLogo">N</span>
-                <span>Normal</span>
+                <button class="shopListButton"><span>+</span>ADICIONAR NA LISTA</button>
             </div>
+            <div class="detailsContainer">
+                    <div><span class="detailText">Detalhes da carta</span><button class="detailTextAll">Ver tudo</button>
+                    </div>
+                    <div><span>Cor</span> <span class="colorDetails blue"></span></div>
+                    <div><span>Custo de mana</span>
+                        <ul class="manaDetails"></ul>
+                    </div>
+                    <div><span>Tipo</span><span class="detailText cardType"></span></div>
+            </div> 
             <div>
-                <lu class="prices">
-                    <li>
-                        <span>R$ 6,28</span>
-                    </li>
-                    <li>
-                        <span>R$ 9,39</span>
-                    </li>
-                    <li>
-                        <span>R$ 14,00</span>
-                    </li>
-                </lu>
+                <div class="topMarket">
+                    <div>
+                        <p class="detailText">Preço Médio <br>Marketplace</p>
+                    </div>
+                    <button class="detailTextAll">Ver tudo</button>
+                </div>
+                <div class="priceContainer">
+                    <div>
+                        <span class="normalLogo">N</span>
+                        <span>Normal</span>
+                    </div>
+                    <div>
+                        <lu class="prices">
+                            <li>
+                                <span>R$ 6,28</span>
+                            </li>
+                            <li>
+                                <span>R$ 9,39</span>
+                            </li>
+                            <li>
+                                <span>R$ 14,00</span>
+                            </li>
+                        </lu>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-  </div>
-    </section>
-    <aside class="cardPreviewContainer">
-      <img src="img/card2.jpg" class="imgPreview" />
-      <hr class="divisor">
-      <ul class="imgList">
-      </ul>
-    </aside>
-  </main>
+            </div>
+        </section>
+        <aside class="cardPreviewContainer">
+            <img src="img/card2.jpg" class="imgPreview" />
+            <hr class="divisor">
+            <ul class="imgList">
+            </ul>
+        </aside>
+    </main>
 </body>
 <script src="script.js"></script>
 
