@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(245, 240, 244);
+    background-color: #F4F4F2;
   }
   
   .descriptionContainer {
@@ -151,7 +151,7 @@
   .shopListContainer{
     display: flex;
     flex-direction: column;
-    background-color: rgb(227, 225, 225);
+    background-color: #ECECEA;
     box-shadow: 5px 5px 5px rgb(208, 208, 208);
     padding: 5px 0;
     width: 98%;
@@ -163,6 +163,26 @@
     padding: 0 5px;
   }
 
+  .detailsContainer div {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+    color: gray;
+  }
+
+  .detailText {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .detailTextAll {
+    color: #FF5921;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(245, 240, 244);
+  }
   .shopList {
     color: rgb(67, 66, 66);
     font-size: 20px;
