@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #mainContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F4F4F2;
+  }
+
+  .manaDetails {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .miniMana{
+    width: 20px;
+    margin: 3px;
+  }
+  
+  .descriptionContainer {
+    padding: 50px 0;
+    min-height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    height: 800px;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navList {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 12px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .navList li {
+    color: grey;
+    border: 1px solid gray;
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  .navList li:active {
+    background-color: gray;
+    color: #ccc;
+  }
+  
+  .navList a {
+    text-decoration: none;
+  }
+  
+  .navMenu {
+    width: 50px;
+    margin: auto;
+    font-size: 30px;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(208, 208, 208);
+  }
+
+  .set {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(208, 208, 208);
+    justify-content: space-between;
+    height: 30px;
+    min-width: max-content;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(208, 208, 208);
+  }
+  
+  .cardLogo {
+    color: white;
+    font-weight: 900;
+    background-color: black;
+    padding: 3px;
+    border-radius: 2px;
+  }
+  
+  .cardNumber {
+    font-weight: 900;
+  }
+  
+  .setType {
+    border: none;
+    background-color: rgb(238, 232, 237);
+  }
+  
+  .navigation {
+    width: 100%;
+  }
+
+  .englishName {
+    color: gray;
+    font-style: italic;
+  }
+  
+  .heartButton {
+    font-size: 30px;
+  }
+  
+  .cardPreviewContainer {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .blue {
+    color: rgb(79, 135, 207);
+  }
+
+  .red {
+    color: rgba(246, 19, 19, 0.872);
+  }
+  
+  .prices {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  .prices li{
+    color: rgb(82, 78, 78);
+    margin-left: 6px;
+  }
+
+  .prices li:first-of-type{
+    border-left: 4px solid green;
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+  .prices li:nth-child(2n){
+    border-left: 4px solid yellow;
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+  .prices li:last-of-type{
+    border-left: 4px solid rgb(240, 77, 23);
+    font-weight: 900;
+    padding-left: 6px;
+  }
+
+  .marketPrice {
+    width: 5px;
+  }
+
+  .normalLogo{
+    background-color: gray;
+    font-weight: 900;
+    color: black;
+    padding: 0 3px;
+  }
+  
+  .topMarket{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: #F4F4F2;
+  }
+
+  .detailsContainer div:first-of-type{
+    background-color: #F4F4F2;
+  }
+  
+  .imgPreview {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .imgList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: calc(135px * 2);
+  }
+  
+  .imgList li {
+    list-style-type: none;
+  }
+  
+  .imgList li img{
+    filter: grayscale(100%);
+  }
+  
+  .miniCard {
+    width: 130px;
+    height: 200px;
+    margin-right: 5px;
+  }
+  
+  .divisor {
+    border: none;
+    height: 1px;
+    width: 80%; 
+    background-color: #ccc; 
+    margin: 30px 0 0 0;
+  }
+  
+  .navMenu:active {
+    height: 34px;
+    background-color: rgb(84, 83, 83);
+  }
+  
+  .shopListContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEA;
+    box-shadow: 5px 5px 5px rgb(208, 208, 208);
+    padding: 5px 0;
+    width: 98%;
+  }
+
+  .itemShopList {
+    color: gray;
+    border: 2px solid gray;
+    padding: 0 5px;
+  }
+
+  .detailsContainer{
+    background-color: #F4F4F2;
+  }
+
+  .detailsContainer div {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .detailText {
+    color: black;
+    font-weight: bold;
+  }
+
+  .shopListDescription{
+    font-size: 10px;
+    color: gray;
+  }
+  
+  .detailTextAll {
+    color: #FF5921;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(245, 240, 244);
+  }
+  .shopList {
+    color: rgb(67, 66, 66);
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .totalCards {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 1px;
+  }
+
+  .shopListToogle {
+    font-size: 20px;
+    width: 35px;
+    padding: 2px;
+  }
+
+  .shopListButton {
+    background-color: rgb(36, 179, 36);
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    height: 50px;
+    width: 250px;
+    align-self: center;
+    border: none;
+    margin-bottom: 8px;
+  }
+
+  .shopListButton:hover{
+    background-color: green;
+  }
+
+  .shopListButton:active{
+    background-color: rgb(47, 136, 47);
+  }
+   
+   
+  .shopListDescription {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #mainContent {
+      flex-direction: row-reverse;
+      height: min-content;
+      padding: none;
+      margin: none;
+    }
+  
+    .navList {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      width: 60%;
+    }
+
+    .set {
+      padding: 10px 15px;
+      width: 95%;
+    }
+
+    .nameContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 98%;
+    }
+
+    .imgList {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      width: calc(135px * 3);
+    }
+
+    br {
+        display: none;
+    }
+  
+    .navList li::after {
+      padding-left: 10px;
+      content: "|";
+    }
+  
+    .descriptionContainer {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly ;
+      padding: 20px 120px 0;
+      border-left: 1px solid rgb(151, 148, 148);
+    }
+  
+    .cardPreviewContainer {
+      padding: 40px;
+      width: 30%;
+    }
+  
+    .navList li {
+      border: none;
+    }
+  
+    .navMenu {
+      display: none;
+    }
+    
+    .heartContainer{
+      display: flex;
+      flex-direction: row;
+    }
+    .heartButton{
+        height: 50px;
+        width: 50px;
+        margin-right: 6px;
+        padding-bottom: 2px;
+        box-shadow: 5px 5px 5px rgb(208, 208, 208);
+        border: none;
+    }
+    .heartButton {
+        display: block;
+    }
+  
+    .imgPreview {
+      width: 350px;
+      height: 450px;
+    }
+
+    .shopListContainer {
+        text-align: left;
+        width: 98%;
+    }
+
+    .inputQuantity {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .inputQuantity div {
+        margin-right: 14px
+    }
+
+    .detailsContainer div {
+      margin-bottom: 10px;
+      height: 25px;
+      align-items: center;
+      background-color: #ECECEA;
+    }
+
+    .priceContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
