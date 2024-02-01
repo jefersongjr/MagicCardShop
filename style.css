@@ -12,6 +12,17 @@
     align-items: center;
     background-color: #F4F4F2;
   }
+
+  .manaDetails {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .miniMana{
+    width: 20px;
+    margin: 3px;
+  }
   
   .descriptionContainer {
     padding: 50px 0;
@@ -106,6 +117,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .blue {
+    color: rgb(79, 135, 207);
+  }
+
+  .red {
+    color: rgba(246, 19, 19, 0.872);
   }
   
   .imgPreview {
