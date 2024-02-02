@@ -34,6 +34,7 @@ const cardSet = [
     mana: 2,
     name: 'Contramágica_1',
     color: 'Azul',
+    manaImage: 'img/blueMana.png',
     type: nameMagica },
   {
     imageUrl: 'img/card3.jpg',
@@ -41,6 +42,7 @@ const cardSet = [
     mana: 2,
     name: 'Contramágica_3',
     color: 'Azul',
+    manaImage: 'img/blueMana.png',
     type: nameMagica },
 ];
 
